@@ -14,6 +14,7 @@ async function shortenUrl(req,res){
         if(res){
             return res.status(400).json({message:'This Alias already exist'})
         }
+        
     }
     if(!customAlias){
         Alias = shortid.generate();
