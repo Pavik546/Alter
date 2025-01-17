@@ -40,7 +40,7 @@ mongoose.connect('mongodb+srv://pavik546:admin@cluster0.cf1cf.mongodb.net/test')
     console.log(error);
   });
    
-const port = 10000;
+const port =process.env.PORT;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
