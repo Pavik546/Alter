@@ -40,7 +40,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/url')
     console.log(error);
   });
    
-const port = 3000;
+const port = 10000;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
