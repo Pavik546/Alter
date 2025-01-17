@@ -14,12 +14,12 @@ async function shortenUrl(req,res){
         if(res){
             return res.status(400).json({message:'This Alias already exist'})
         }
-        
+
     }
     if(!customAlias){
         Alias = shortid.generate();
     }
-    ShortUrl= `http://localhost:3000/api/shorten/${Alias}`;
+    ShortUrl= `https://alter-iwe9.onrender.com/api/shorten/${Alias}`;
 
     const urlData = {
         LongUrl: longUrl,
