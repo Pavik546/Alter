@@ -27,7 +27,7 @@ const secretKey = process.env.SESSION_SECRET
 app.use(userAgent.express());
 
 mongoose.set('debug', false);
-mongoose.connect('mongodb://127.0.0.1:27017/url')
+mongoose.connect('mongodb+srv://pavik546:admin@cluster0.cf1cf.mongodb.net/test')
   .then(() => {
     console.log('MongoDB connected');
     app.listen(port, () => {
